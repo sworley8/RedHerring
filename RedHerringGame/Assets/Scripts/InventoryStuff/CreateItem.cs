@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class CreateItem : MonoBehaviour
 {
-    public List<string> maybeNames;
-    private List<OneItem> inventory;
+    public List<string> maybeNames = new List<string>();
+    public List<string> theirDescribes = new List<string>();
+    public List<Sprite> theirImage = new List<Sprite>();
+    private List<OneItem> inventory = new List<OneItem>();
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //maybeNames = cii.ReturnCorrectNames();
         for (int j = 0; j < maybeNames.Count; j++)
         {
             OneItem item = new OneItem();
-            item.Title. = maybeNames[j];
+            item.Title = maybeNames[j];
             item.Id = j;
+            item.Description = theirDescribes[j];
+            item.ItemPic = theirImage[j];
+
+
             inventory.Add(item);
 
         }
@@ -28,6 +34,7 @@ public class CreateItem : MonoBehaviour
     }
     public List<OneItem> ReturnCorrectItems()
     {
+
         return inventory;
     }
 }

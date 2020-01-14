@@ -23,10 +23,10 @@ public class OneItem
         Id = 0;
         ItemPic = null;
     }
-    public int Id { get { return Id; } set { Id = value; } }
-    public string Title { get { return Title; } set { Title = value; } }
-    public string Description { get { return Description; } set { Description = value; } }
-    public Sprite ItemPic { get { return ItemPic; } set { ItemPic = value; } }
+    public int Id { get { return id; } set { id = value; } }
+    public string Title { get { return title; } set { title = value; } }
+    public string Description { get { return description; } set { description = value; } }
+    public Sprite ItemPic { get { return itemPic; } set { itemPic = value; } }
 }
 
 

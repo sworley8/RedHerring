@@ -71,7 +71,12 @@ public class InventoryItems : MonoBehaviour
             if (inventorySlots[j].name == "Empty")
             {
                 inventorySlots[j].name = myInventory[j].Title;
+                inventorySlots[j].transform.GetChild(0).GetComponent<Image>().sprite = myInventory[j].ItemPic;
+                inventorySlots[j].transform.GetChild(0).gameObject.SetActive(true);
+                //inventorySlots[j].
+                //look at item and put correct image on it
             }
+
         }
     }
 
