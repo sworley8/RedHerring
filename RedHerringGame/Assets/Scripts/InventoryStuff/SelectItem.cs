@@ -27,7 +27,16 @@ public class SelectItem : MonoBehaviour
         {
             if (this.gameObject.name != "Empty")
             {
-                selectedText.text = "Item:" + myInventory[0].Id + " " +myInventory[0].Title + "                 " + myInventory[0].Description;
+                if (this.gameObject.name == "Sphere")
+                {
+                    selectedText.text = "Item:" + myInventory[0].Id + " " + myInventory[0].Title + "                 " + myInventory[0].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
+
+                } else
+                {
+                    Debug.Log(this.gameObject.name);
+                    selectedText.text = "Item:" + myInventory[1].Id + " " + myInventory[1].Title + "                 " + myInventory[1].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
+                }
+                
             }
         }
     }

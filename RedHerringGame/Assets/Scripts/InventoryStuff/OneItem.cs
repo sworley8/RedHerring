@@ -8,6 +8,7 @@ public class OneItem
     public string title;
     public string description;
     public Sprite itemPic;
+    public int sceneNumToBeCorrect;
     //public OneItem(int id, string name, string description, Sprite itemPic)
     //{
     //    this.id = id;
@@ -22,11 +23,13 @@ public class OneItem
         Description = "";
         Id = 0;
         ItemPic = null;
+        SceneNumToBeCorrect = 0;
     }
     public int Id { get { return id; } set { id = value; } }
     public string Title { get { return title; } set { title = value; } }
     public string Description { get { return description; } set { description = value; } }
     public Sprite ItemPic { get { return itemPic; } set { itemPic = value; } }
+    public int SceneNumToBeCorrect { get { return sceneNumToBeCorrect; } set { sceneNumToBeCorrect = value; } }
 }
 
 

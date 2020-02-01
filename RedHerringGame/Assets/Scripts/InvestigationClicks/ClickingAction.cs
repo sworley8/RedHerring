@@ -20,7 +20,7 @@ public class ClickingAction : MonoBehaviour
     {
         if (numOfCorrectItemsNeed == 0)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(sceneName: "TutorialTrialScene");
         }
         if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire2"))
         { // if left button pressed...

@@ -7,12 +7,15 @@ public class PlayerHealth : MonoBehaviour
 {
     int maxHealth = 3;
     public GameObject lives;
-    private int curr;
+    public int curr;
+    public GameObject thisData;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        //DontDestroyOnLoad(thisData);
         curr = maxHealth;
+
     }
 
     // Update is called once per frame
@@ -26,16 +29,16 @@ public class PlayerHealth : MonoBehaviour
     }
     public void handleHealth()
     {
-        if (curr == 0)
+        if (curr == 1)
         {
-            SceneManager.LoadScene(sceneName: "InvestigationTest");
+            SceneManager.LoadScene(sceneName: "GameOverScene");
         }
         curr--;
         if (lives != null)
         {
+            //Destroy(lives.transform.GetChild(maxHealth - (curr + 1)).gameObject);
             lives.transform.GetChild(maxHealth - (curr + 1)).gameObject.SetActive(false);
         }
-
 
     }
 }

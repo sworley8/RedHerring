@@ -8,6 +8,7 @@ public class CreateItem : MonoBehaviour
     public List<string> theirDescribes = new List<string>();
     public List<Sprite> theirImage = new List<Sprite>();
     private List<OneItem> inventory = new List<OneItem>();
+    public List<bool> correctNameForLine = new List<bool>();
     
     // Start is called before the first frame update
     void Awake()
@@ -20,6 +21,7 @@ public class CreateItem : MonoBehaviour
             item.Id = j;
             item.Description = theirDescribes[j];
             item.ItemPic = theirImage[j];
+
 
 
             inventory.Add(item);

@@ -6,21 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScenes/DialougeTest.unity
-    guid: c41d62319f0cd49bd90b18170cbe229f
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/InventoryTest.unity
-    guid: 100b46582415e4443ac1067552f0b78f
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/InvestigationTest.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/TrialTest.unity
-    guid: 49f36816b4714480d8ff0d74c49f0159
-  - enabled: 1
     path: Assets/Scenes/MenuScene.unity
     guid: 195e5f8268f474cf485fc41fcef31d4b
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: cba5bfbf1f98b4bf9af6e1b0c4f48ddb
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TutorialIntroScene.unity
+    guid: 939daa659ec4443fab180f4135f5afd5
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TutorialInvestigationScene.unity
+    guid: 46178babfc4c34996bb755b20931ff9d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TutorialTrialScene.unity
+    guid: f183dad4190e84dad8ff3db039fb23ad
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/InventoryTest.unity
+    guid: 100b46582415e4443ac1067552f0b78f
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/TutorialTrialEndScene.unity
+    guid: 4e961f2f4e771494e814fbb136b13b04
   m_configObjects: {}

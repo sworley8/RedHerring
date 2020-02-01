@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Slot
   - creation
+  - NotEmptyTag
+  - data
+  - lives
   layers:
   - Default
   - TransparentFX
