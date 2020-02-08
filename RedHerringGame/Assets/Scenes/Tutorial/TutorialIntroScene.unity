@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.92156863}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -700,11 +700,17 @@ MonoBehaviour:
   correctLine: I am really curious
   correctLineApplied: 0
   SceneNum: 8
+  player: {fileID: 0}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 0}
   s:
   - Hello, Hello, Testing 1,2,3.....Ah! Now I see you:Sophia
   - Do you think you can do me a favor?
   - Press the sphere for me.
   - You'll know you succeed when you see my pretty face again.
+  x:
+  - You lose
 --- !u!4 &459434186
 Transform:
   m_ObjectHideFlags: 0
@@ -731,6 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799fe24c0d52248f0b2ee42736c47541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  indexer: 0
   s:
   - Hello, Hello, Testing 1,2,3.....Ah! Now I see you:Sophia
   - Do you think you can do me a favor?
@@ -1182,6 +1189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: {fileID: 336092131}
+  curr: 0
+  thisData: {fileID: 0}
 --- !u!81 &1675633870
 AudioListener:
   m_ObjectHideFlags: 0

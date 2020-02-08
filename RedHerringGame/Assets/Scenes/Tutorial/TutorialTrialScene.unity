@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 268293665}
   m_Layer: 0
   m_Name: Screen
-  m_TagString: Untagged
+  m_TagString: panel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1406,6 +1406,11 @@ PrefabInstance:
       propertyPath: dialogueScreen
       value: 
       objectReference: {fileID: 980511990}
+    - target: {fileID: 3554341275585827231, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
+        type: 3}
+      propertyPath: gameObjectie
+      value: 
+      objectReference: {fileID: 268293664}
     - target: {fileID: 6484955862195690257, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
         type: 3}
       propertyPath: m_Name

@@ -92,7 +92,6 @@ public class TestingTutorial2 : MonoBehaviour
                     scriptWrong.SetActive(false);
                     scriptNorm.SetActive(true);
                     scriptNorm.GetComponent<TestingTutorial2>().indexer = 0;
-                    //lives.GetComponent<PlayerHealth>().handleHealth();
                 }
                 if (indexer == s.Length - 1 && !(scriptWrong.activeSelf))
                 {
@@ -111,9 +110,9 @@ public class TestingTutorial2 : MonoBehaviour
                 if (correctLine == s[indexer-1])
                 {
                     correctLineApplied = true;
-                    //gameObjectie.transform.GetChild(1).gameObject.SetActive(true);
-                    //gameObjectie.transform.GetChild(0).gameObject.SetActive(false);
-                    SceneManager.LoadScene(sceneName: "InventoryTest");
+                    gameObjectie.transform.GetChild(1).gameObject.SetActive(true);
+                    gameObjectie.transform.GetChild(0).gameObject.SetActive(false);
+                    //SceneManager.LoadScene(sceneName: "InventoryTest");
                 }
                 else {
                     correctLineApplied = false;

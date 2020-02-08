@@ -12,7 +12,7 @@ public class ChangeScene : MonoBehaviour
     public GameObject itemWant;
     ToSeeIfPlayerRIght tt;
     SelectItem si;
-    //public GameObject gameObjectie;
+    public GameObject gameObjectie;
     //public GameObject inventoryScreen;
     int newScene;
     // Start is called before the first frame update
@@ -22,6 +22,7 @@ public class ChangeScene : MonoBehaviour
         tt = dataWant.GetComponent<ToSeeIfPlayerRIght>();
         itemWant = GameObject.Find("Creation");
         cii = itemWant.GetComponent<CreateItem>();
+        gameObjectie = GameObject.FindGameObjectWithTag("panel");
         
         
     }
@@ -51,7 +52,10 @@ public class ChangeScene : MonoBehaviour
                 } else
                 {
                     tt.cameBackForMore = true;
-                    SceneManager.LoadScene(tt.sceneNum);
+                    gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
+                //Currently stuck isnt at wrong dialogue yet
+                    gameObjectie.transform.GetChild(1).gameObject.SetActive(false);
+                //SceneManager.LoadScene(tt.sceneNum);
                 }
             //}
             //gameObjectie.transform.GetChild(0).gameObject.SetActive(true);

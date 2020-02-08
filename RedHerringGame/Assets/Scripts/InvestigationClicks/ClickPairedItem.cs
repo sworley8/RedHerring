@@ -10,7 +10,7 @@ public class ClickPairedItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        objectBoi.GetComponent<CapsuleCollider>().enabled = false;
+        objectBoi.GetComponent<SphereCollider>().enabled = false;
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class ClickPairedItem : MonoBehaviour
         //DO THIS PART FOR PAIRING THINGS IF NEED BE
         if (ca.orderMatter == true)
         {
-            objectBoi.GetComponent<CapsuleCollider>().enabled = true;
+            objectBoi.GetComponent<SphereCollider>().enabled = true;
         }
     }
 }
