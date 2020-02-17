@@ -482,11 +482,17 @@ MonoBehaviour:
   correctLine: 
   correctLineApplied: 0
   SceneNum: 0
+  player: {fileID: 0}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 0}
   s:
-  - Hello, Let us see if this truly works:Sophia
+  - Let us see if this truly works:Her
   - I am really curious
   - I have no clue what this does so lets find out togther!
-  - Hmm is that how you truly feel:Hero
+  - Hmm is that how you truly feel:Sophia
+  x:
+  - You lose
 --- !u!1 &648334332
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +590,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: {fileID: 178711511}
+  curr: 0
+  thisData: {fileID: 0}
 --- !u!1 &723059663
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +625,8 @@ MonoBehaviour:
   thisData: {fileID: 723059663}
   sceneNum: 1
   correctLinePicked: 0
+  cameBackForMore: 0
+  livesLeft: 0
 --- !u!4 &723059665
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,11 +1131,17 @@ MonoBehaviour:
   correctLine: I am really curious
   correctLineApplied: 0
   SceneNum: 3
+  player: {fileID: 0}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 648334332}
   s:
   - Hello, Let us see if this truly works:Sophia
   - I am really curious
   - I have no clue what this does so lets find out togther!
   - Hmm is that how you truly feel:Hero
+  x:
+  - You lose
 --- !u!1 &1868828151
 GameObject:
   m_ObjectHideFlags: 0

@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f67b79142dd4ce5a55774f9ba013e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectBoi: {fileID: 71507176}
+  objectBoi: {fileID: 1943069359}
   ca: {fileID: 713775804}
 --- !u!136 &71507178
 CapsuleCollider:

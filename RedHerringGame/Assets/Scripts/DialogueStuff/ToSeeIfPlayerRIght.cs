@@ -11,11 +11,12 @@ public class ToSeeIfPlayerRIght : MonoBehaviour
     public bool correctLinePicked = false;
     public bool cameBackForMore = false;
     public int livesLeft;
+    
     // Start is called before the first frame update
-    private void Awake()
-    {
-        DontDestroyOnLoad(thisData);
-    }
+    //private void Awake()
+    //{
+    //    DontDestroyOnLoad(thisData);
+    //}
     void Start()
     {
         dataWant = GameObject.Find("NormalDialogue");
@@ -27,6 +28,7 @@ public class ToSeeIfPlayerRIght : MonoBehaviour
     {
         sceneNum = testing.SceneNum;
         correctLinePicked = testing.correctLineApplied;
+
     }
 
 }

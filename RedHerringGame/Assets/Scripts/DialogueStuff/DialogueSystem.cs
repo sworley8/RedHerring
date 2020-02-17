@@ -50,7 +50,7 @@ public class DialogueSystem : MonoBehaviour
     IEnumerator Speak(string targetScript, bool adding, string characterN)
     {
         
-        dialogueBox.enabled = true;
+        //dialogueBox.enabled = true;
         speech = targetScript;
         if (!adding)
         {
@@ -90,13 +90,13 @@ public class DialogueSystem : MonoBehaviour
     {
         public Text speakerName;
         public Text script;
-        public Image dialogueBox;
+        //public Image dialogueBox;
         //public Sprite speakerImage;
         //public Sprite dialogueBoxImage;
     }
     public Text speakerName { get { return infos.speakerName; } }
     public Text script{ get { return infos.script;} }
-    public Image dialogueBox { get { return infos.dialogueBox; } }
+    //public Image dialogueBox { get { return infos.dialogueBox; } }
     //public Sprite speakerImage;
     //public Sprite dialogueBoxImage;
 }

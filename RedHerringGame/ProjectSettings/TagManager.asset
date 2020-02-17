@@ -9,6 +9,7 @@ TagManager:
   - NotEmptyTag
   - data
   - lives
+  - panel
   layers:
   - Default
   - TransparentFX
