@@ -64,6 +64,7 @@ public class TestingTutorial2 : MonoBehaviour
             //lives.GetComponent<PlayerHealth>().handleHealth();
             scriptNorm.SetActive(false);
             scriptWrong.SetActive(true);
+            scriptWrong.GetComponent<TestingTutorial2>().indexer = 0;
         }
         if (indexer == 0 && !(scriptWrong.activeSelf))
         {
@@ -92,6 +93,7 @@ public class TestingTutorial2 : MonoBehaviour
                 if (indexer >= s.Length && (scriptWrong.activeSelf))
                 {
                     lives.GetComponent<PlayerHealth>().handleHealth();
+                    Debug.Log(scriptWrong.GetComponent<TestingTutorial2>().indexer);
                     scriptWrong.SetActive(false);
                     scriptNorm.SetActive(true);
                     scriptNorm.GetComponent<TestingTutorial2>().indexer = 0;
@@ -115,6 +117,7 @@ public class TestingTutorial2 : MonoBehaviour
                 if (correctLine == s[indexer-1])
                 {
                     correctLineApplied = true;
+                    
                     gameObjectie.transform.GetChild(1).gameObject.SetActive(true);
                     gameObjectie.transform.GetChild(0).gameObject.SetActive(false);
                     //SceneManager.LoadScene(sceneName: "InventoryTest");
@@ -123,6 +126,7 @@ public class TestingTutorial2 : MonoBehaviour
                     correctLineApplied = false;
                     if (lives.GetComponent<PlayerHealth>().curr == 1)
                     {
+                        Debug.Log("Look Here");
                         lives.GetComponent<PlayerHealth>().handleHealth();
                     }
                     scriptNorm.SetActive(false);

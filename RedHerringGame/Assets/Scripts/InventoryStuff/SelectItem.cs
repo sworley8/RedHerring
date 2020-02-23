@@ -23,6 +23,7 @@ public class SelectItem : MonoBehaviour
     }
     public void ShowSelectedText()
     {
+
         if (this.gameObject.GetComponent<Toggle>().isOn)
         {
             if (this.gameObject.name != "Empty")
@@ -36,7 +37,8 @@ public class SelectItem : MonoBehaviour
                     Debug.Log(this.gameObject.name);
                     selectedText.text = "Item:" + myInventory[1].Id + " " + myInventory[1].Title + "                 " + myInventory[1].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
                 }
-                
+                //this.gameObject.GetComponent<Toggle>().isOn = true;
+
             }
         }
     }
