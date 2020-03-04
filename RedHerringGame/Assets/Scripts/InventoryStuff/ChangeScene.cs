@@ -42,16 +42,18 @@ public class ChangeScene : MonoBehaviour
         {
             //for (int j = 0; j < cii.maybeNames.Count; j++)
             //{
-                if ((this.gameObject.name == "Sphere") && cii.correctNameForLine[0])
+                if ((this.gameObject.name == "Sphere") && cii.correctNameForLine[0] && tt.correctLinePicked)
                 {
                     newScene = tt.sceneNum + 2;
                     Debug.Log(newScene);
+                    this.gameObject.GetComponent<Toggle>().isOn = false;
                     //Debug.Log(cii.maybeNames[j]);
 
                     SceneManager.LoadScene(newScene);
                 } else
                 {
                     tt.cameBackForMore = true;
+                    this.gameObject.GetComponent<Toggle>().isOn = false;
                     gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
                 //Currently stuck isnt at wrong dialogue yet
                     gameObjectie.transform.GetChild(1).gameObject.SetActive(false);

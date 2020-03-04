@@ -20,7 +20,7 @@ public class ChangeViewInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("Fire2"))
         {
             SceneManager.LoadScene(tt.sceneNum);
         }
