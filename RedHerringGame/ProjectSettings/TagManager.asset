@@ -10,6 +10,8 @@ TagManager:
   - data
   - lives
   - panel
+  - Fire
+  - wrongoption
   layers:
   - Default
   - TransparentFX

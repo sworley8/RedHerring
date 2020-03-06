@@ -14,6 +14,7 @@ public class PLayerLook : MonoBehaviour
     private void Awake()
     {
         lookCursor();
+        //transform.Rotate(0);
         xAxisClamp = 0.0f;
     }
     private void lookCursor()
