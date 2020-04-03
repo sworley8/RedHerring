@@ -16,16 +16,46 @@ public class ChangeScreenViaButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown("Fire2"))
         {
-            if (screen.transform.GetChild(0).gameObject.activeInHierarchy)
+            foreach (Transform child in screen.transform)
             {
-                screen.transform.GetChild(1).gameObject.SetActive(true);
-                screen.transform.GetChild(0).gameObject.SetActive(false);
+                if (child != screen.transform.GetChild(1))
+                {
+                    child.gameObject.SetActive(false);
+                } if (child == screen.transform.GetChild(1))
+                {
+                    if (child.gameObject.activeInHierarchy)
+                    {
+                        screen.transform.GetChild(1).gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        screen.transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                }
+                //child.gameObject.SetActive(true);
             }
-            if (screen.transform.GetChild(1).gameObject.activeInHierarchy)
-            {
-                screen.transform.GetChild(1).gameObject.SetActive(true);
-                screen.transform.GetChild(0).gameObject.SetActive(false);
-            }
+            //if (screen.transform.GetChild(1).gameObject.activeInHierarchy)
+            //{
+            //    screen.transform.GetChild(1).gameObject.SetActive(false);
+            //}
+            //else
+            //{
+            //    screen.transform.GetChild(1).gameObject.SetActive(true);
+            //}
+            
+            //if (screen.transform.GetChild(0).gameObject.activeInHierarchy)
+            //{
+            //    screen.transform.GetChild(1).gameObject.SetActive(true);
+            //    screen.transform.GetChild(0).gameObject.SetActive(false);
+            //}
+            //if (screen.transform.GetChild(1).gameObject.activeInHierarchy)
+            //{
+            //    screen.transform.GetChild(1).gameObject.SetActive(true);
+            //    screen.transform.GetChild(0).gameObject.SetActive(false);
+            //} else
+            //{
+            //    screen.transform.GetChild(1).gameObject.SetActive(true);
+            //}
 
             //SceneManager.LoadScene(tt.sceneNum);
         }

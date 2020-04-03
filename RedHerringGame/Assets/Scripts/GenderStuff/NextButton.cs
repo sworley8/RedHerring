@@ -21,8 +21,8 @@ public class NextButton : MonoBehaviour
     {
         if (picking.pronoun != "" && picking.avatar != 2)
         {
-            SceneManager.LoadScene(sceneName: "TutorialIntroScene");
-            //SceneManager.LoadScene(sceneName: "IntroScene");
+            //SceneManager.LoadScene(sceneName: "TutorialIntroScene");
+            SceneManager.LoadScene(sceneName: "IntroScene");
         }
     }
 }

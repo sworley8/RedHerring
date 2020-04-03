@@ -34,7 +34,7 @@ public class WakeUpScene : MonoBehaviour
             {
                 if (indexer >= s.Length)
                 {
-                    SceneManager.LoadScene(sceneName: "TutorialInvestigationScene");
+                    SceneManager.LoadScene(sceneName: "GenderTest");
                 }
 
                 talking(s[indexer]);

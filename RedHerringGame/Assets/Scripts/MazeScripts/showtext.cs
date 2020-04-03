@@ -26,9 +26,12 @@ public class showtext : MonoBehaviour
     }
     IEnumerator WaitForSec()
     {
-        yield return new WaitForSeconds(3);
-        Destroy(uitext);
-        Destroy(gameObject);
+        yield return new WaitForSeconds(2);
+        uitext.SetActive(false);
+        //gameObject.SetActive(false);
+        //if (gameObject.name != "Directions" || )
+        //Destroy(uitext);
+        //Destroy(gameObject);
 
     }
 }

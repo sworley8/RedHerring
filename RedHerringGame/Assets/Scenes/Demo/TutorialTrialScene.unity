@@ -675,6 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498690279}
   - component: {fileID: 498690280}
+  - component: {fileID: 498690281}
   m_Layer: 0
   m_Name: NormalDialogueF
   m_TagString: Untagged
@@ -731,6 +732,37 @@ MonoBehaviour:
   - 'Hmmmm, which one is the lie: Hero'
   x:
   - You lose
+--- !u!114 &498690281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498690278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba28ec3bd84b4fa4902c68c42240c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptNormSpot: {fileID: 1061220927}
+  scriptNorm: {fileID: 1669426548}
+  scriptWrong: {fileID: 1669426548}
+  correctLine: Why would I perform a ritual on someone I have never met
+  correctLineApplied: 0
+  player: {fileID: 55738551}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 187630971}
+  gameObjectie: {fileID: 268293664}
+  dialogueBox: {fileID: 206544449}
+  pa: {fileID: 0}
+  s:
+  - "No, that\u2019s a lie, you dirty liar.How dare you say something like that?:Occulist"
+  - Why would I perform a ritual on someone I have never met
+  - This must all be a dream.Yeah, I am dreaming.
+  - "If the ritual actually worked then\u2026..."
+  - "Since it is your first time, I will help you.Didn\u2019t one of those statements
+    sound false based on what you saw in the bathroom?:Siri"
 --- !u!1 &509683337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205523170}
   - component: {fileID: 1205523171}
+  - component: {fileID: 1205523172}
   m_Layer: 0
   m_Name: NormalDialogueN
   m_TagString: Untagged
@@ -1115,6 +1148,37 @@ MonoBehaviour:
   - 'Hmmmm, which one is the lie: Hero'
   x:
   - You lose
+--- !u!114 &1205523172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205523169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba28ec3bd84b4fa4902c68c42240c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptNormSpot: {fileID: 1061220927}
+  scriptNorm: {fileID: 1669426548}
+  scriptWrong: {fileID: 1669426548}
+  correctLine: Why would I perform a ritual on someone I have never met
+  correctLineApplied: 0
+  player: {fileID: 55738551}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 187630971}
+  gameObjectie: {fileID: 268293664}
+  dialogueBox: {fileID: 206544449}
+  pa: {fileID: 0}
+  s:
+  - "No, that\u2019s a lie, you dirty liar.How dare you say something like that?:Occulist"
+  - Why would I perform a ritual on someone I have never met
+  - This must all be a dream.Yeah, I am dreaming.
+  - "If the ritual actually worked then\u2026..."
+  - "Since it is your first time, I will help you.Didn\u2019t one of those statements
+    sound false based on what you saw in the bathroom?:Siri"
 --- !u!1 &1226335738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1556,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1842920080}
   - component: {fileID: 1842920081}
+  - component: {fileID: 1842920083}
+  - component: {fileID: 1842920082}
   m_Layer: 0
   m_Name: NormalDialogueM
   m_TagString: Untagged
@@ -1548,6 +1614,68 @@ MonoBehaviour:
   - 'Hmmmm, which one is the lie: Hero'
   x:
   - You lose
+--- !u!114 &1842920082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842920079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba28ec3bd84b4fa4902c68c42240c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptNormSpot: {fileID: 0}
+  scriptNorm: {fileID: 0}
+  scriptWrong: {fileID: 0}
+  correctLine: 
+  correctLineApplied: 0
+  player: {fileID: 0}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 0}
+  gameObjectie: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  pa: {fileID: 0}
+  s:
+  - "No, that\u2019s a lie, you dirty liar.How dare you say something like that?:Occulist"
+  - Why would I perform a ritual on someone I have never met
+  - This must all be a dream.Yeah, I am dreaming.
+  - "If the ritual actually worked then\u2026..."
+  - "Since it is your first time, I will help you.Didn\u2019t one of those statements
+    sound false based on what you saw in the bathroom?:Siri"
+--- !u!114 &1842920083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842920079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba28ec3bd84b4fa4902c68c42240c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptNormSpot: {fileID: 1061220927}
+  scriptNorm: {fileID: 1669426548}
+  scriptWrong: {fileID: 1669426548}
+  correctLine: Why would I perform a ritual on someone I have never met
+  correctLineApplied: 0
+  player: {fileID: 55738551}
+  indexer: 0
+  dataInfo: 0
+  lives: {fileID: 187630971}
+  gameObjectie: {fileID: 268293664}
+  dialogueBox: {fileID: 206544449}
+  pa: {fileID: 0}
+  s:
+  - "No, that\u2019s a lie, you dirty liar.How dare you say something like that?:Occulist"
+  - Why would I perform a ritual on someone I have never met
+  - This must all be a dream.Yeah, I am dreaming.
+  - "If the ritual actually worked then\u2026..."
+  - "Since it is your first time, I will help you.Didn\u2019t one of those statements
+    sound false based on what you saw in the bathroom?:Siri"
 --- !u!1 &1843125801
 GameObject:
   m_ObjectHideFlags: 0

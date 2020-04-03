@@ -7,6 +7,8 @@ public class IntroScene1 : MonoBehaviour
 {
     DialogueSystem test;
     public int indexer;
+    public GameObject dialogueBox;
+    public GameObject characterArt;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +46,7 @@ public class IntroScene1 : MonoBehaviour
         "What?! No, that can’t be true!:Victor",
         "That slobbering mess in the corner is your ticket to getting all your precious memories back. Find a way to make them stop freaking out so you can get started.:Siri",
         "Here’s two hints- Find a way to make them/him/her not scared of you and find your body.",
-        "You can click on objects to investigate and press B to pull up the map.",
+        "You can click on objects to investigate and press E to pull up the map.",
         "See you next time.:Siri"
     };
     // Update is called once per frame
@@ -56,9 +58,37 @@ public class IntroScene1 : MonoBehaviour
             //if (!test.isSpeaking || test.isWaitingForUserInput)
             if (!test.isSpeaking || test.waitingForInput)
             {
+                if (indexer == 3 || indexer == 4 || indexer == 6 || indexer == 9)
+                {
+                    
+                    characterArt.transform.GetChild(0).gameObject.SetActive(false);
+                    characterArt.transform.GetChild(2).gameObject.SetActive(false);
+                    characterArt.transform.GetChild(1).gameObject.SetActive(true);
+                    dialogueBox.transform.GetChild(0).gameObject.SetActive(false);
+                    dialogueBox.transform.GetChild(2).gameObject.SetActive(false);
+                    dialogueBox.transform.GetChild(1).gameObject.SetActive(true);
+                }
+                else if (indexer == 15 || indexer == 16 || indexer == 17 || indexer == 18 || indexer == 20 || indexer == 21 || indexer == 22 || indexer == 24 || indexer == 25 || indexer == 26 || indexer == 27)
+                {
+                    characterArt.transform.GetChild(0).gameObject.SetActive(false);
+                    characterArt.transform.GetChild(1).gameObject.SetActive(false);
+                    characterArt.transform.GetChild(2).gameObject.SetActive(true);
+                    dialogueBox.transform.GetChild(0).gameObject.SetActive(false);
+                    dialogueBox.transform.GetChild(1).gameObject.SetActive(false);
+                    dialogueBox.transform.GetChild(2).gameObject.SetActive(true);
+                }
+                else
+                {
+                    characterArt.transform.GetChild(2).gameObject.SetActive(false);
+                    characterArt.transform.GetChild(1).gameObject.SetActive(false);
+                    characterArt.transform.GetChild(0).gameObject.SetActive(true);
+                    dialogueBox.transform.GetChild(2).gameObject.SetActive(false);
+                    dialogueBox.transform.GetChild(1).gameObject.SetActive(false);
+                    dialogueBox.transform.GetChild(0).gameObject.SetActive(true);
+                }
                 if (indexer >= s.Length)
                 {
-                    SceneManager.LoadScene(sceneName: "GameOverScene");
+                    SceneManager.LoadScene(sceneName: "RoomIntro");
                 }
 
                 talking(s[indexer]);

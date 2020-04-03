@@ -32,4 +32,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingsScene.unity
     guid: 89ef6a0c2c6ad4e46b4748f90769692a
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/GenderTest.unity
+    guid: 0ca3daeef8db04c82af3b336d4f92531
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/BioTest.unity
+    guid: 051e4a4e9803b4af89c0f38f65e79e19
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/IntroScene.unity
+    guid: 63bf4dff8cb194a0bb8e7730a1cc70c7
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/RoomIntro.unity
+    guid: eadcdb800837745248817ca8c75a001e
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/LoungeIntro.unity
+    guid: a8b040ac48cfe4e7e86d6a75bdc5a00a
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/KitchenIntro.unity
+    guid: fe60212c07b6641b69a1f751b79c58a8
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/BathroomScene2.unity
+    guid: 2ce6e019e8f7142d78ee9f8585ae4c04
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/BathroomScene1.unity
+    guid: 60063e2f590c747a594e2c080db2f613
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialIntroScene.unity
+    guid: 57d50228ac00f418bbd636282f390226
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart1.2TalkPhoto.unity
+    guid: 8f3435499a0a244d89f8d92a37ac644f
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart1Photo.unity
+    guid: 6519b9a521040444d97529a75a5c5f78
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart2.2TalkBook.unity
+    guid: f90cae94e5a604eecb9664b14cf87a2b
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart2Book.unity
+    guid: 7ceb2d41cf02940c08a6c0d8937857f9
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart3.2TalkCandle.unity
+    guid: 9a722a3908c0940c6bbeddb18fe3f3c0
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart3Candle.unity
+    guid: 18c8d5cded3484de29696bce9f39b76c
+  - enabled: 1
+    path: Assets/Scenes/MazeGame.unity
+    guid: ce2ba8fe5bff44e15b9cda6271dcde60
+  - enabled: 1
+    path: Assets/Scenes/TBCScene.unity
+    guid: 229dfb88015e14643b03a18d25e05ec1
   m_configObjects: {}
