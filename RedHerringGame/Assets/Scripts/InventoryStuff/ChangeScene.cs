@@ -42,10 +42,11 @@ public class ChangeScene : MonoBehaviour
         {
             //for (int j = 0; j < cii.maybeNames.Count; j++)
             //{
-                if (tt.sceneNum == 19) {
+                if (tt.sceneNum == 14) {
                     if ((this.gameObject.name == "Photo") && cii.correctNameForLine[1] && tt.correctLinePicked)
                     {
-                        newScene = tt.sceneNum - 1;
+                        newScene = tt.sceneNum + 1;
+
                         Debug.Log(newScene);
                         this.gameObject.GetComponent<Toggle>().isOn = false;
                         //Debug.Log(cii.maybeNames[j]);
@@ -54,7 +55,7 @@ public class ChangeScene : MonoBehaviour
                     }
                     else
                     {
-                        //Debug.Log(cii.correctNameForLine[1]);
+
                         tt.cameBackForMore = true;
                         this.gameObject.GetComponent<Toggle>().isOn = false;
                         gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
@@ -63,11 +64,11 @@ public class ChangeScene : MonoBehaviour
                         //SceneManager.LoadScene(tt.sceneNum);
                     }
                 }
-                if (tt.sceneNum == 21)
+                if (tt.sceneNum == 16)
                 {
                     if ((this.gameObject.name == "Book") && cii.correctNameForLine[2] && tt.correctLinePicked)
                     {
-                        newScene = tt.sceneNum - 1;
+                        newScene = tt.sceneNum + 1;
                         Debug.Log(newScene);
                         this.gameObject.GetComponent<Toggle>().isOn = false;
                         //Debug.Log(cii.maybeNames[j]);
@@ -85,11 +86,11 @@ public class ChangeScene : MonoBehaviour
                         //SceneManager.LoadScene(tt.sceneNum);
                     }
                 }
-            if (tt.sceneNum == 23)
+            if (tt.sceneNum == 18)
             {
                 if ((this.gameObject.name == "Candlestick") && cii.correctNameForLine[3] && tt.correctLinePicked)
                 {
-                    newScene = tt.sceneNum - 1;
+                    newScene = tt.sceneNum + 1;
                     Debug.Log(newScene);
                     this.gameObject.GetComponent<Toggle>().isOn = false;
                     //Debug.Log(cii.maybeNames[j]);

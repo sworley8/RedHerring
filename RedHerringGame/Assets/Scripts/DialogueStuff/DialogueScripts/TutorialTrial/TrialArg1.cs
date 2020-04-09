@@ -24,6 +24,7 @@ public class TrialArg1 : MonoBehaviour
     {
         pa = (PronounAndAvatar)GameObject.FindObjectOfType(typeof(PronounAndAvatar));
         int i = 0;
+        Debug.Log(pa.pronoun);
         if (pa.pronoun == "male")
         {
             i = 0;
@@ -36,8 +37,9 @@ public class TrialArg1 : MonoBehaviour
         {
             i = 2;
         }
-        scriptNorm = scriptNormSpot.transform.GetChild(i).gameObject;
-        scriptWrong = scriptWrongSpot.transform.GetChild(i).gameObject;
+        Debug.Log(i);
+        //scriptNorm = scriptNormSpot.transform.GetChild(i).gameObject;
+        //scriptWrong = scriptWrongSpot.transform.GetChild(i).gameObject;
         lives = GameObject.FindGameObjectWithTag("Player");
 
 
@@ -78,11 +80,14 @@ public class TrialArg1 : MonoBehaviour
     {
 
         dataInfo = GameObject.FindGameObjectWithTag("data").GetComponent<ToSeeIfPlayerRIght>().cameBackForMore;
+        //Debug.Log("hi");
         if (dataInfo)
         {
+            Debug.Log("hello");
             GameObject.FindGameObjectWithTag("data").GetComponent<ToSeeIfPlayerRIght>().cameBackForMore = false;
             //lives.GetComponent<PlayerHealth>().handleHealth();
             scriptNorm.SetActive(false);
+            scriptWrongSpot.SetActive(true);
             scriptWrong.SetActive(true);
             scriptWrong.GetComponent<TrialArg1>().indexer = 0;
         }
@@ -102,45 +107,54 @@ public class TrialArg1 : MonoBehaviour
             //if (!test.isSpeaking || test.isWaitingForUserInput)
             if (!test.isSpeaking || test.waitingForInput)
             {
-                if (indexer >= s.Length && !(scriptWrong.activeSelf))
+                if (indexer >= s.Length && !(scriptWrongSpot.activeSelf))
                 {
-                    player.transform.GetChild(3).gameObject.SetActive(false);
-                    player.transform.GetChild(2).gameObject.SetActive(true);
+                    Debug.Log(scriptWrong.activeSelf);
+                    player.transform.GetChild(2).gameObject.SetActive(false);
+                    player.transform.GetChild(1).gameObject.SetActive(true);
+                    player.transform.GetChild(0).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(0).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(1).gameObject.SetActive(true);
                     dialogueBox.transform.GetChild(2).gameObject.SetActive(false);
                     indexer = 0;
 
                 }
-                if (indexer >= s.Length && (scriptWrong.activeSelf))
+                if (indexer >= s.Length && (scriptWrongSpot.activeSelf))
                 {
                     
-                    player.transform.GetChild(2).gameObject.SetActive(true);
-                    player.transform.GetChild(pa.avatar).gameObject.SetActive(false);
+                    player.transform.GetChild(1).gameObject.SetActive(true);
+                    player.transform.GetChild(2).gameObject.SetActive(false);
+                    player.transform.GetChild(0).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(0).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(1).gameObject.SetActive(true);
                     dialogueBox.transform.GetChild(2).gameObject.SetActive(false);
                     lives.GetComponent<PlayerHealth>().handleHealth();
                     Debug.Log(scriptWrong.GetComponent<TrialArg1>().indexer);
                     scriptWrong.SetActive(false);
+                    scriptWrongSpot.SetActive(false);
                     scriptNorm.SetActive(true);
                     scriptNorm.GetComponent<TrialArg1>().indexer = 0;
                 }
-                if (indexer == s.Length - 1 && (scriptWrong.activeSelf))
+                if (indexer == s.Length-1 && (scriptWrongSpot.activeSelf))
                 {
-                    Debug.Log("Hi");
+                    
+                    //Debug.Log(scriptWrong.activeSelf);
                     player.transform.GetChild(2).gameObject.SetActive(false);
-                    player.transform.GetChild(3).gameObject.SetActive(false);
-                    player.transform.GetChild(pa.avatar).gameObject.SetActive(true);
+                    player.transform.GetChild(1).gameObject.SetActive(false);
+                    player.transform.GetChild(0).gameObject.SetActive(true);
+                    player.transform.GetChild(0).gameObject.SetActive(true);
+                    Debug.Log(player.transform.GetChild(0).GetChild(pa.avatar).gameObject.name);
                     dialogueBox.transform.GetChild(2).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(1).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(0).gameObject.SetActive(true);
                 }
-                if (indexer == s.Length - 1 && !(scriptWrong.activeSelf))
+                if (scriptNorm.GetComponent<TrialArg1>().indexer == s.Length-1 && !(scriptWrongSpot.activeSelf))
                 {
+                    Debug.Log("CheckCheck");
                     
-                    player.transform.GetChild(2).gameObject.SetActive(false);
-                    player.transform.GetChild(3).gameObject.SetActive(true);
+                    player.transform.GetChild(1).gameObject.SetActive(false);
+                    player.transform.GetChild(2).gameObject.SetActive(true);
+                    player.transform.GetChild(0).GetChild(pa.avatar).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(1).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(0).gameObject.SetActive(false);
                     dialogueBox.transform.GetChild(2).gameObject.SetActive(true);
@@ -149,7 +163,7 @@ public class TrialArg1 : MonoBehaviour
                 indexer++;
             }
         }
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetButtonDown("Fire2")) && indexer <= s.Length - 1 && !(scriptWrong.activeSelf))
+        if (Input.GetKeyDown(KeyCode.W) && indexer < s.Length - 1 && !(scriptWrongSpot.activeSelf))
         {
             //if (!test.isSpeaking || test.isWaitingForUserInput)
             if (!test.isSpeaking || test.waitingForInput)
@@ -165,14 +179,15 @@ public class TrialArg1 : MonoBehaviour
                 else
                 {
                     correctLineApplied = false;
+
                     gameObjectie.transform.GetChild(1).gameObject.SetActive(true);
                     gameObjectie.transform.GetChild(0).gameObject.SetActive(false);
-                    if (lives.GetComponent<PlayerHealth>().curr == 1)
-                    {
-                        Debug.Log("Look Here");
-                        lives.GetComponent<PlayerHealth>().handleHealth();
-                    }
-                    scriptNorm.SetActive(false);
+                    //if (lives.GetComponent<PlayerHealth>().curr == 1)
+                    //{
+                    //    Debug.Log("Look Here");
+                    //    lives.GetComponent<PlayerHealth>().handleHealth();
+                    //}
+                    //scriptNorm.SetActive(false);
 
                 }
                 indexer++;

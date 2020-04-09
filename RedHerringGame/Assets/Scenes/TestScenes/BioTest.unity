@@ -2243,6 +2243,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8450e181639a94f94988350f79f42761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  map: {fileID: 0}
+  bio: {fileID: 0}
+  set: {fileID: 0}
+  app: {fileID: 0}
 --- !u!114 &2031238764
 MonoBehaviour:
   m_ObjectHideFlags: 0

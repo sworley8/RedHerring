@@ -71,7 +71,7 @@ public class ClickingActionTutorialProcess : MonoBehaviour
                         counting++;
                         if (counting > 2)
                         {
-                            hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = false;
+                            hit.collider.gameObject.SetActive(false);
                         }
 
                     }

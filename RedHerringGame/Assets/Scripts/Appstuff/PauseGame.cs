@@ -19,28 +19,29 @@ public class PauseGame : MonoBehaviour
 	{
 
 		//uses the p button to pause and unpause the game
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (GamePaused)
 			{
 				StartUp();
 			}
-			else if (Time.timeScale == 0)
-			{
+			else {
 				Pause();
-			}
+            }
+			
 		}
 	}
     void StartUp()
     {
 		appscreen.SetActive(false);
-		Time.timeScale = 1f;
+		//Time.timeScale = 1f;
 		GamePaused = false;
 	}
     void Pause()
     {
 		appscreen.SetActive(true);
-		Time.timeScale = 0f;
+		Time.timeScale = (Time.timeScale == 0) ? 1 : 0;
+	
 		GamePaused = true;
     }
     

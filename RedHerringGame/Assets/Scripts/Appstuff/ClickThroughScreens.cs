@@ -28,9 +28,11 @@ public class ClickThroughScreens : MonoBehaviour
             bio.SetActive(false);
             set.SetActive(false);
             app.SetActive(false);
+            
         }
         if (name == map.name)
         {
+
             map.SetActive(true);
             inventory.SetActive(false);
             bio.SetActive(false);

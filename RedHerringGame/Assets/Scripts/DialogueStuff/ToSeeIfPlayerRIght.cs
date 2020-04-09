@@ -26,18 +26,18 @@ public class ToSeeIfPlayerRIght : MonoBehaviour
         //dataWant = ra.scriptNorm;
         pa = (PronounAndAvatar)GameObject.FindObjectOfType(typeof(PronounAndAvatar));
         int i = 0;
-        //if (pa.pronoun == "male")
-        //{
-        //    i = 0;
-        //}
-        //if (pa.pronoun == "female")
-        //{
-        //    i = 1;
-        //}
-        //if (pa.pronoun == "nonbinary")
-        //{
-        //    i = 2;
-        //}
+        if (pa.pronoun == "male")
+        {
+            i = 0;
+        }
+        if (pa.pronoun == "female")
+        {
+            i = 1;
+        }
+        if (pa.pronoun == "nonbinary")
+        {
+            i = 2;
+        }
         dataWant = scriptNormSpot.transform.GetChild(i).gameObject;
         //dataWant = GameObject.Find("NormalDialogue");
 

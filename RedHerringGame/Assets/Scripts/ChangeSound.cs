@@ -17,6 +17,8 @@ public class ChangeSound : MonoBehaviour
     {
         sliderMusic.value = PlayerPrefs.GetFloat("MusicVolume", 1f);
         sliderSFX.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
+        sliderMaster.value = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        sliderVoice.value = PlayerPrefs.GetFloat("VoicingVolume", 1f);
 
     }
     public void SetMusicLevel()

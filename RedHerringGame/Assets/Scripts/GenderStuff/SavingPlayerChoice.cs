@@ -7,6 +7,7 @@ public class SavingPlayerChoice : MonoBehaviour
     public PronounAndAvatar picking;
     public GameObject dialoguespot;
     public GameObject playerspot;
+    public GameObject cultspot;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,8 @@ public class SavingPlayerChoice : MonoBehaviour
             //Debug.Log("9");
             playerspot.transform.GetChild(1).gameObject.SetActive(false);
             playerspot.transform.GetChild(0).gameObject.SetActive(true);
+            cultspot.transform.GetChild(1).gameObject.SetActive(false);
+            cultspot.transform.GetChild(0).gameObject.SetActive(true);
 
         }
         if (picking.avatar == 1)
@@ -45,6 +48,8 @@ public class SavingPlayerChoice : MonoBehaviour
             //Debug.Log("5");
             playerspot.transform.GetChild(0).gameObject.SetActive(false);
             playerspot.transform.GetChild(1).gameObject.SetActive(true);
+            cultspot.transform.GetChild(0).gameObject.SetActive(false);
+            cultspot.transform.GetChild(1).gameObject.SetActive(true);
 
         }
     }
