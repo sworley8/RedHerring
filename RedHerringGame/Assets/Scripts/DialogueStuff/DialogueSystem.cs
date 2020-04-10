@@ -81,7 +81,7 @@ public class DialogueSystem : MonoBehaviour
         string finalVal = speakerName.text;
         if (s!= speakerName.text && s != "")
         {
-            finalVal = (s.ToLower().Contains("narrator")) ? "" : s;
+            finalVal = (s.ToLower().Contains("na")) ? "" : s;
         }
         return finalVal;
     }

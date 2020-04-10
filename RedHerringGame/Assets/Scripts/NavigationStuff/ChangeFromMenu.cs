@@ -16,7 +16,11 @@ public class ChangeFromMenu : MonoBehaviour
     }
     public void changeToGame()
     {
-        SceneManager.LoadScene("TutorialIntroScene");
+        SceneManager.LoadScene("WakeUpRitual");
+    }
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
     public void quitGame()
     {

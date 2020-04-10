@@ -12,24 +12,132 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOverScene.unity
     guid: cba5bfbf1f98b4bf9af6e1b0c4f48ddb
   - enabled: 1
-    path: Assets/Scenes/Tutorial/TutorialIntroScene.unity
-    guid: 939daa659ec4443fab180f4135f5afd5
-  - enabled: 1
-    path: Assets/Scenes/Tutorial/TutorialInvestigationScene.unity
-    guid: 46178babfc4c34996bb755b20931ff9d
-  - enabled: 1
-    path: Assets/Scenes/Tutorial/TutorialTrialScene.unity
-    guid: f183dad4190e84dad8ff3db039fb23ad
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/InventoryTest.unity
-    guid: 100b46582415e4443ac1067552f0b78f
-  - enabled: 1
-    path: Assets/Scenes/Tutorial/TutorialTrialEndScene.unity
-    guid: 4e961f2f4e771494e814fbb136b13b04
-  - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: d43583213e5c445be9a810dcf0781fd9
   - enabled: 1
     path: Assets/Scenes/SettingsScene.unity
     guid: 89ef6a0c2c6ad4e46b4748f90769692a
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/GenderTest.unity
+    guid: 0ca3daeef8db04c82af3b336d4f92531
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/BioTest.unity
+    guid: 051e4a4e9803b4af89c0f38f65e79e19
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/WakeUpRitual.unity
+    guid: dc10a8e0d50cc49999f8a4fb0c74ba07
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/IntroScene.unity
+    guid: 63bf4dff8cb194a0bb8e7730a1cc70c7
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/RoomIntro.unity
+    guid: eadcdb800837745248817ca8c75a001e
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/LoungeIntro.unity
+    guid: a8b040ac48cfe4e7e86d6a75bdc5a00a
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/KitchenIntro.unity
+    guid: fe60212c07b6641b69a1f751b79c58a8
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/BathroomScene1.unity
+    guid: 60063e2f590c747a594e2c080db2f613
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Investigation/BathroomScene2.unity
+    guid: 2ce6e019e8f7142d78ee9f8585ae4c04
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialIntroScene.unity
+    guid: 57d50228ac00f418bbd636282f390226
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart1Photo.unity
+    guid: 6519b9a521040444d97529a75a5c5f78
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart1.2TalkPhoto.unity
+    guid: 8f3435499a0a244d89f8d92a37ac644f
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart2Book.unity
+    guid: 7ceb2d41cf02940c08a6c0d8937857f9
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart2.2TalkBook.unity
+    guid: f90cae94e5a604eecb9664b14cf87a2b
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart3Candle.unity
+    guid: 18c8d5cded3484de29696bce9f39b76c
+  - enabled: 1
+    path: Assets/Scenes/IntroScenes/Trial/TrialPart3.2TalkCandle.unity
+    guid: 9a722a3908c0940c6bbeddb18fe3f3c0
+  - enabled: 1
+    path: Assets/Scenes/TBCScene.unity
+    guid: 229dfb88015e14643b03a18d25e05ec1
+  - enabled: 1
+    path: Assets/Scenes/MazeGame.unity
+    guid: ce2ba8fe5bff44e15b9cda6271dcde60
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor0/Bus.unity
+    guid: b776dd69fa24341ffb9ca968d387807b
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor0/Closet.unity
+    guid: 399ff4c2736a74400a4cd288b010f681
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor0/LaundryRoom.unity
+    guid: 04535486d15014b9c914bc62df26be72
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/DormBathroomCase.unity
+    guid: 4e94e5b1111eb4d1da932540b9f64967
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/GloNLustRoom.unity
+    guid: 11d64a2963cda422cbd595eb038f1d60
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/KitchenCase.unity
+    guid: c196ae7b14aa24e76875c9f463b137f7
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/LangRoom.unity
+    guid: c31886563a2844cb7b15b6dcea93430d
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/LoungeCase.unity
+    guid: d8ae670bad67c4c4297bca4780903dfe
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/MyRoomCase.unity
+    guid: ed9525b3e31934f37b3609a15faf8311
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/NowNClevRoom.unity
+    guid: 185eeb024cbe64603af1129503b2d42c
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor1/SolNMakRoom.unity
+    guid: 5d9f8786c9fbe4bd0b802e6ca3e58bf1
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor2/GuestBathroom.unity
+    guid: 8e1c603ea13e74611aa5ae122b547d88
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor2/Lab.unity
+    guid: 176b97adbd07648f8864a6fb88367771
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor2/MeetRoom.unity
+    guid: a9f1c31fffb4d4a7bbc631bbeafd4025
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor2/RecRoom.unity
+    guid: ea96855f35c584bc392360ba35215764
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor3/Greenhouse.unity
+    guid: ab0644051b14645eaa7f5833a3ae56ff
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor3/Gym.unity
+    guid: 70c2f527a8afc418b9143f3f3c7d01ee
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Floor3/StorageShed.unity
+    guid: 7f98b7230a7f34d3ab4b645b0b844eb0
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Cutscenes/CalScene.unity
+    guid: 8aff699a1f35248c6af579a36748f343
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Cutscenes/GloScene.unity
+    guid: 4add65dbea7e84f498e2cf842cd34951
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Cutscenes/LustScene.unity
+    guid: c2c68ef43faa04916b96d47e60dd5f0c
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Cutscenes/MakScene.unity
+    guid: fa2a8e48724c543989c13f318ff33916
+  - enabled: 1
+    path: Assets/Scenes/Case1Scenes/Cutscenes/SolScene.unity
+    guid: 2198d9aedeece4707a7756bb8ab7f06f
   m_configObjects: {}

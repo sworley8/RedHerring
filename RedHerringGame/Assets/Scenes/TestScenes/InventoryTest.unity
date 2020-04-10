@@ -209,7 +209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1793828920
 GameObject:
@@ -293,7 +293,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1793828924
 MonoBehaviour:
@@ -372,7 +372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7188114078468261714
 PrefabInstance:
@@ -385,6 +385,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventoryScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795271011310790792, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a0637d00b27641a59d02e3c319f6a8e,
+        type: 3}
+    - target: {fileID: 5795271011310790792, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.3490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795271011310790792, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.3474101
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795271011310790792, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3474101
       objectReference: {fileID: 0}
     - target: {fileID: 6722987181805982126, guid: b0c62760c3a8d4fe5bc34f6b55b54d67,
         type: 3}

@@ -9,6 +9,11 @@ public class ClickingAction : MonoBehaviour
     public int numOfCorrectItemsNeed = 1;
     public bool orderMatter = false;
     public List<string> CorrectNames = new List<string>();
+    MovementForInvestigation mi;
+    public GameObject normalDialogue;
+    public GameObject correctDialogue;
+    public int sceneNumber;
+    public int counting = 0;
 
     void Start()
     {
@@ -18,11 +23,8 @@ public class ClickingAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (numOfCorrectItemsNeed == 0)
-        {
-            SceneManager.LoadScene(sceneName: "TutorialTrialScene");
-        }
-        if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire2"))
+        //Debug.Log(distanceToOriginPlane);
+        if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
         { // if left button pressed...
             Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -30,22 +32,26 @@ public class ClickingAction : MonoBehaviour
             {
                 if (hit.transform.gameObject.layer == 8)
                 {
-                    //Indicates click one then other object
-                    if (hit.transform.name == "Capsule")
-                    {
-                        //prompt the proper dialogue here to move story
-                        Debug.Log("This is not Cube");
-                        orderMatter = true;
-                    }
+                    normalDialogue.SetActive(true);
+                    
+                    //gameObject.SetActive(true);
 
-                    //not what wanted to move along story
-                    Debug.Log("Hit");
-                    if (hit.transform.name == "Cube")
-                    {
-                        orderMatter = true;
-                        //prompt the dummy dialogue here to hint where to go
-                        Debug.Log("This is Cube");
-                    }
+                    //Indicates click one then other object
+                    //if (hit.transform.name == "Capsule")
+                    //{
+                    //    //prompt the proper dialogue here to move story
+                    //    Debug.Log("This is not Cube");
+                    //    orderMatter = true;
+                    //}
+
+                    ////not what wanted to move along story
+
+                    //if (hit.transform.name == "Cube")
+                    //{
+                    //    orderMatter = true;
+                    //    //prompt the dummy dialogue here to hint where to go
+                    //    Debug.Log("This is Cube");
+                    //}
                 }
                 if (hit.transform.gameObject.layer == 9)
                 {
@@ -54,8 +60,10 @@ public class ClickingAction : MonoBehaviour
                     {
                         CorrectNames.Add(hit.transform.name);
                         numOfCorrectItemsNeed--;
-                        Debug.Log("This is not Cube BROOOOOO");
+
+                        correctDialogue.SetActive(true);
                     }
+                    
                     ////item to move along story
                 }
             }

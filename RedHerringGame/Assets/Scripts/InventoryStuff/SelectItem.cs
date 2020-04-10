@@ -28,15 +28,32 @@ public class SelectItem : MonoBehaviour
         {
             if (this.gameObject.name != "Empty")
             {
-                if (this.gameObject.name == "Sphere")
+                if (this.gameObject.name == "Body")
                 {
                     selectedText.text = "Item:" + myInventory[0].Id + " " + myInventory[0].Title + "                 " + myInventory[0].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
 
-                } else
+                }
+                if (this.gameObject.name == "Photo")
                 {
                     Debug.Log(this.gameObject.name);
                     selectedText.text = "Item:" + myInventory[1].Id + " " + myInventory[1].Title + "                 " + myInventory[1].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
                 }
+                if (this.gameObject.name == "Book")
+                {
+                    selectedText.text = "Item:" + myInventory[2].Id + " " + myInventory[2].Title + "                 " + myInventory[2].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
+
+                }
+                if (this.gameObject.name == "Candlestick")
+                {
+                    Debug.Log(this.gameObject.name);
+                    selectedText.text = "Item:" + myInventory[3].Id + " " + myInventory[3].Title + "                 " + myInventory[3].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
+                }
+                if (this.gameObject.name == "Pentagram")
+                {
+                    selectedText.text = "Item:" + myInventory[4].Id + " " + myInventory[4].Title + "                 " + myInventory[4].Description + "\n\n" + "Press the Spacebar to Present Evidence.";
+
+                }
+                
                 //this.gameObject.GetComponent<Toggle>().isOn = true;
 
             }

@@ -42,21 +42,74 @@ public class ChangeScene : MonoBehaviour
         {
             //for (int j = 0; j < cii.maybeNames.Count; j++)
             //{
-                if ((this.gameObject.name == "Sphere") && cii.correctNameForLine[0])
+                if (tt.sceneNum == 14) {
+                    if ((this.gameObject.name == "Photo") && cii.correctNameForLine[1] && tt.correctLinePicked)
+                    {
+                        newScene = tt.sceneNum + 1;
+
+                        Debug.Log(newScene);
+                        this.gameObject.GetComponent<Toggle>().isOn = false;
+                        //Debug.Log(cii.maybeNames[j]);
+
+                        SceneManager.LoadScene(newScene);
+                    }
+                    else
+                    {
+
+                        tt.cameBackForMore = true;
+                        this.gameObject.GetComponent<Toggle>().isOn = false;
+                        gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
+                        //Currently stuck isnt at wrong dialogue yet
+                        gameObjectie.transform.GetChild(1).gameObject.SetActive(false);
+                        //SceneManager.LoadScene(tt.sceneNum);
+                    }
+                }
+                if (tt.sceneNum == 16)
                 {
-                    newScene = tt.sceneNum + 2;
+                    if ((this.gameObject.name == "Book") && cii.correctNameForLine[2] && tt.correctLinePicked)
+                    {
+                        newScene = tt.sceneNum + 1;
+                        Debug.Log(newScene);
+                        this.gameObject.GetComponent<Toggle>().isOn = false;
+                        //Debug.Log(cii.maybeNames[j]);
+
+                        SceneManager.LoadScene(newScene);
+                    }
+                    else
+                    {
+                        //Debug.Log(cii.correctNameForLine[2]);
+                        tt.cameBackForMore = true;
+                        this.gameObject.GetComponent<Toggle>().isOn = false;
+                        gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
+                        //Currently stuck isnt at wrong dialogue yet
+                        gameObjectie.transform.GetChild(1).gameObject.SetActive(false);
+                        //SceneManager.LoadScene(tt.sceneNum);
+                    }
+                }
+            if (tt.sceneNum == 18)
+            {
+                if ((this.gameObject.name == "Candlestick") && cii.correctNameForLine[3] && tt.correctLinePicked)
+                {
+                    newScene = tt.sceneNum + 1;
                     Debug.Log(newScene);
+                    this.gameObject.GetComponent<Toggle>().isOn = false;
                     //Debug.Log(cii.maybeNames[j]);
 
                     SceneManager.LoadScene(newScene);
-                } else
-                {
-                    tt.cameBackForMore = true;
-                    gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
-                //Currently stuck isnt at wrong dialogue yet
-                    gameObjectie.transform.GetChild(1).gameObject.SetActive(false);
-                //SceneManager.LoadScene(tt.sceneNum);
                 }
+                else
+                {
+                    Debug.Log(this.gameObject.name);
+                    tt.cameBackForMore = true;
+                    this.gameObject.GetComponent<Toggle>().isOn = false;
+                    gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
+                    //Currently stuck isnt at wrong dialogue yet
+                    gameObjectie.transform.GetChild(1).gameObject.SetActive(false);
+                    //SceneManager.LoadScene(tt.sceneNum);
+                }
+            }
+
+
             //}
             //gameObjectie.transform.GetChild(0).gameObject.SetActive(true);
             //gameObjectie.transform.GetChild(1).gameObject.SetActive(false);

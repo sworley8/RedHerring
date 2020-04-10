@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void handleHealth()
     {
-        if (curr == 1)
+        if (curr == 0)
         {
             SceneManager.LoadScene(sceneName: "GameOverScene");
         }
